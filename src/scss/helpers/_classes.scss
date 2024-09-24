@@ -1,0 +1,77 @@
+// Uses
+@use './variables' as *;
+@use './mixins.scss' as *;
+
+// Form
+.formType {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+    .for-container {
+        display: flex;
+        select {
+            border: 1px solid $main-color;
+            color: $main-color;
+            outline: none;
+            cursor: pointer;
+            width: 120px;
+            height: 35px;
+        }
+    }
+}
+
+// Table
+.table {
+    .tr {
+        display: flex;
+        padding: 10px 0;
+        background-color: #fff;
+        text-align: center;
+        align-items: center;
+        border-bottom: 2px solid #f3f5f9;
+        &:not(:first-of-type):hover {
+            background-color: #c4cbcf2e;
+            border-color: transparent;
+        }
+        &:first-child {
+            background-color: $second-color;
+            color: #fff;
+        }
+        > div:not(.options) {
+            flex: 1;
+            padding: 0 7px 0;
+        }
+        > div.options {
+            flex-basis: 180px;
+            @include center;
+            gap: 5px;
+        }
+    }
+}
+
+// Styles
+.edit {
+    background-color: $second-color;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.delete {
+    background-color: #ff005e;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.start {
+    background-color: $main-color;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
