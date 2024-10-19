@@ -59,7 +59,7 @@ import parentResultView from '@/views/Dashboard/parents/results/parentResult.vue
 import parentAbsence from '@/views/Dashboard/parents/absence/absence.vue'
 import ParentProfileView from '@/views/Dashboard/parents/profile/profile.vue'
 
-import SSV from '@/views/ssv.vue'
+import SSV from '@/views/index.vue'
 
 const routes = [
   {
